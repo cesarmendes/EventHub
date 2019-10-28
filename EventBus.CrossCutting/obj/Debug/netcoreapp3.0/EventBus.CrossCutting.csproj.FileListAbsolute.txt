@@ -1,0 +1,17 @@
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.CrossCutting.deps.json
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.CrossCutting.dll
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\obj\Debug\netcoreapp3.0\EventBus.CrossCutting.csprojAssemblyReference.cache
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\obj\Debug\netcoreapp3.0\EventBus.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\obj\Debug\netcoreapp3.0\EventBus.CrossCutting.AssemblyInfo.cs
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.CrossCutting.pdb
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.Application.dll
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.Application.pdb
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\obj\Debug\netcoreapp3.0\EventBus.CrossCutting.csproj.CopyComplete
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\obj\Debug\netcoreapp3.0\EventBus.CrossCutting.dll
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\obj\Debug\netcoreapp3.0\EventBus.CrossCutting.pdb
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.Domain.Common.dll
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.Domain.dll
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.Infra.EventBus.dll
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.Infra.EventBus.pdb
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.Domain.pdb
+C:\Users\cesar\source\repos\EventBus\EventBus.CrossCutting\bin\Debug\netcoreapp3.0\EventBus.Domain.Common.pdb

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "EventBus.Domain/1.0.0": {
+        "dependencies": {
+          "EventBus.Domain.Common": "1.0.0"
+        },
+        "runtime": {
+          "EventBus.Domain.dll": {}
+        }
+      },
+      "EventBus.Domain.Common/1.0.0": {
+        "runtime": {
+          "EventBus.Domain.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EventBus.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventBus.Domain.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

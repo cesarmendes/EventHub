@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventBus.Domain\EventBus.Domain.csproj" />
+    <ProjectReference Include="..\EventBus.Infra.Queue\EventBus.Infra.EventBus.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+C:\Users\cesar\source\repos\EventBus\EventBus.Infra.Queue\bin\Debug\netcoreapp3.0\EventBus.Infra.Queue.deps.json
+C:\Users\cesar\source\repos\EventBus\EventBus.Infra.Queue\bin\Debug\netcoreapp3.0\EventBus.Infra.Queue.dll
+C:\Users\cesar\source\repos\EventBus\EventBus.Infra.Queue\obj\Debug\netcoreapp3.0\EventBus.Infra.Queue.AssemblyInfoInputs.cache
+C:\Users\cesar\source\repos\EventBus\EventBus.Infra.Queue\obj\Debug\netcoreapp3.0\EventBus.Infra.Queue.AssemblyInfo.cs
+C:\Users\cesar\source\repos\EventBus\EventBus.Infra.Queue\bin\Debug\netcoreapp3.0\EventBus.Infra.Queue.pdb
+C:\Users\cesar\source\repos\EventBus\EventBus.Infra.Queue\obj\Debug\netcoreapp3.0\EventBus.Infra.Queue.dll
+C:\Users\cesar\source\repos\EventBus\EventBus.Infra.Queue\obj\Debug\netcoreapp3.0\EventBus.Infra.Queue.pdb
+C:\Users\cesar\source\repos\EventBus\EventBus.Infra.Queue\obj\Debug\netcoreapp3.0\EventBus.Infra.Queue.csprojAssemblyReference.cache

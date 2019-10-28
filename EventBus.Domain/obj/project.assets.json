@@ -1,0 +1,93 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "EventBus.Domain.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/EventBus.Domain.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EventBus.Domain.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EventBus.Domain.Common/1.0.0": {
+      "type": "project",
+      "path": "../EventBus.Domain.Common/EventBus.Domain.Common.csproj",
+      "msbuildProject": "../EventBus.Domain.Common/EventBus.Domain.Common.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "EventBus.Domain.Common >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\cesar\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\cesar\\source\\repos\\EventBus\\EventBus.Domain\\EventBus.Domain.csproj",
+      "projectName": "EventBus.Domain",
+      "projectPath": "C:\\Users\\cesar\\source\\repos\\EventBus\\EventBus.Domain\\EventBus.Domain.csproj",
+      "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cesar\\source\\repos\\EventBus\\EventBus.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\cesar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "C:\\Users\\cesar\\source\\repos\\EventBus\\EventBus.Domain.Common\\EventBus.Domain.Common.csproj": {
+              "projectPath": "C:\\Users\\cesar\\source\\repos\\EventBus\\EventBus.Domain.Common\\EventBus.Domain.Common.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
