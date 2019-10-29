@@ -18,7 +18,15 @@ namespace EventBus.Controllers
             _dispatcher = dispatcher;
         }
 
+        [HttpGet]
+        [Route("get")]
+        public IActionResult Get() 
+        {
+            return Ok("teste");
+        }
+
         [HttpPost]
+        [Route("create")]
         public IActionResult Post([FromBody] SendSummaryCommand command)
         {
             _dispatcher.Send(command);

@@ -7,7 +7,6 @@ C:\Users\cesar\source\repos\EventBus\EventBus.Product\bin\Debug\netcoreapp3.0\Ev
 C:\Users\cesar\source\repos\EventBus\EventBus.Product\bin\Debug\netcoreapp3.0\EventBus.Product.runtimeconfig.dev.json
 C:\Users\cesar\source\repos\EventBus\EventBus.Product\bin\Debug\netcoreapp3.0\EventBus.Product.dll
 C:\Users\cesar\source\repos\EventBus\EventBus.Product\bin\Debug\netcoreapp3.0\EventBus.Product.pdb
-C:\Users\cesar\source\repos\EventBus\EventBus.Product\obj\Debug\netcoreapp3.0\EventBus.Product.csprojAssemblyReference.cache
 C:\Users\cesar\source\repos\EventBus\EventBus.Product\obj\Debug\netcoreapp3.0\staticwebassets\EventBus.Product.StaticWebAssets.Manifest.cache
 C:\Users\cesar\source\repos\EventBus\EventBus.Product\obj\Debug\netcoreapp3.0\staticwebassets\EventBus.Product.StaticWebAssets.xml
 C:\Users\cesar\source\repos\EventBus\EventBus.Product\obj\Debug\netcoreapp3.0\EventBus.Product.MvcApplicationPartsAssemblyInfo.cache

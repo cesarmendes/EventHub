@@ -33,7 +33,6 @@ namespace EventBus
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSwaggerConfig();
-
             services.AddControllers();
         }
 
@@ -58,16 +57,15 @@ namespace EventBus
                 endpoints.MapControllers();
             });
 
-
             var bus = app.ApplicationServices.GetService<IEventBus>();
-            bus.CreateQueue<SummaryIntegrationEvent>();
-
+            
+            bus.Subscribe<SummaryIntegrationEvent, SummaryIntegrationEventHandler>();
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
             builder.RegisterModule(new CommandHandlerModule());
-            builder.RegisterModule(new InfrastructureModule());
+            builder.RegisterModule(new EventHandlerModule());
        
         }
     }

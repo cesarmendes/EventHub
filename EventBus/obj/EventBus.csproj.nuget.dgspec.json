@@ -296,6 +296,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[5.1.2, )"

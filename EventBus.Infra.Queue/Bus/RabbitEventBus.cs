@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Autofac;
 using EventBus.Infra.EventBus.Events;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
@@ -11,10 +12,15 @@ namespace EventBus.Infra.EventBus.Bus
     public class RabbitEventBus : IEventBus
     {
         private const string EXCHANGE_NAME = "CommissionExchange";
-        private readonly IConnection _connection;
 
-        public RabbitEventBus()
+        private readonly ILifetimeScope _scope;
+        private readonly IConnection _connection;
+        private readonly Dictionary<string, Tuple<Type, Type, IModel, IBasicConsumer>> _consumers;
+
+        public RabbitEventBus(ILifetimeScope scope)
         {
+            _scope = scope;
+
             _connection = new ConnectionFactory
             {
                 HostName = "localhost",
@@ -25,6 +31,8 @@ namespace EventBus.Infra.EventBus.Bus
                 NetworkRecoveryInterval = TimeSpan.FromSeconds(5),
                 UseBackgroundThreadsForIO = false
             }.CreateConnection();
+
+            _consumers = new Dictionary<string, Tuple<Type, Type, IModel, IBasicConsumer>>();
         }
 
         public void Publish<TEvent>(TEvent @event)
@@ -76,29 +84,29 @@ namespace EventBus.Infra.EventBus.Bus
             }
         }
 
-        public void Subscribe<TEvent>()
-             where TEvent : IEvent
-        {
-            using (var model = _connection.CreateModel())
-            {
-                var queue = typeof(TEvent).Name;
-
-                var consumer = new EventingBasicConsumer(model);
-                consumer.Received += Consumer_Received;
-                model.BasicConsume(queue, false, consumer);
-            }
-        }
-
         private void Consumer_Received(object sender, BasicDeliverEventArgs e)
         {
-            ((EventingBasicConsumer)sender).Model.BasicAck(e.DeliveryTag, false);
+            //((EventingBasicConsumer)sender).Model.BasicAck(e.DeliveryTag, false);
         }
 
-        public void Subscribe<TEvent>(string name)
-             where TEvent : IEvent
+        public void Subscribe<TEvent, TEventHandler>()
+            where TEvent : IEvent
+            where TEventHandler : IEventHandler<TEvent>
         {
-            throw new NotImplementedException();
+            var type = typeof(TEvent);
+            var queue = type.Name;
+
+            var model = _connection.CreateModel();
+
+            model.QueueDeclare(queue, true, false, false);
+
+            model.QueueBind(queue, EXCHANGE_NAME, queue);
+
+            var consumer = new EventingBasicConsumer(model);
+            consumer.Received += Consumer_Received;
+            model.BasicConsume(queue, false, consumer);
         }
+
 
         public void Unsubscribe<TEvent>()
              where TEvent : IEvent
@@ -106,27 +114,12 @@ namespace EventBus.Infra.EventBus.Bus
             throw new NotImplementedException();
         }
 
-        public void Unsubscribe<TEvent>(string name)
-             where TEvent : IEvent
-        {
-            throw new NotImplementedException();
-        }
 
         public void Dispose()
         {
             throw new NotImplementedException();
         }
 
-        public void CreateQueue<TEvent>()
-             where TEvent : IEvent
-        {
-            using (var model = _connection.CreateModel())
-            {
-                model.ExchangeDeclare(EXCHANGE_NAME, ExchangeType.Direct, true);
-                string queue = typeof(TEvent).Name;
-                model.QueueDeclare(queue, true, false, false, null);
-                model.QueueBind(queue, EXCHANGE_NAME, queue);
-            }
-        }
+
     }
 }

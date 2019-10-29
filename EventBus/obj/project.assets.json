@@ -3037,6 +3037,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "5.0.1",
           "RabbitMQ.Client": "5.1.2",
           "System.Text.Json": "4.6.0"
         },

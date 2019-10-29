@@ -5,3 +5,4 @@ C:\Users\cesar\source\repos\EventBus\EventBus.Domain.Common\obj\Debug\netcoreapp
 C:\Users\cesar\source\repos\EventBus\EventBus.Domain.Common\obj\Debug\netcoreapp3.0\EventBus.Domain.Common.AssemblyInfo.cs
 C:\Users\cesar\source\repos\EventBus\EventBus.Domain.Common\obj\Debug\netcoreapp3.0\EventBus.Domain.Common.dll
 C:\Users\cesar\source\repos\EventBus\EventBus.Domain.Common\obj\Debug\netcoreapp3.0\EventBus.Domain.Common.pdb
+C:\Users\cesar\source\repos\EventBus\EventBus.Domain.Common\obj\Debug\netcoreapp3.0\EventBus.Domain.Common.csprojAssemblyReference.cache
